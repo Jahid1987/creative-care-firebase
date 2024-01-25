@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- SEO meta tags  -->
+    <title>Creative Care</title>
+    <meta name="description" content="Creative Care Coaching for SSC, HSC and Varsity Admission. Students can prepare for varsity admission from SSC/HSC. ">
+
+    <!-- Open graph meta tags  -->
+    <meta property="og:title" content="Creative Care | Home">
+    <meta property="og:site_name" content="Creative Care">
+    <meta property="og:url" content="https://fir-9-dojo-5dffe.web.app/">
+    <meta property="og:description" content="Creative Care Coaching for SSC, HSC and Varsity Admission. Students can prepare for varsity admission from SSC/HSC.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://fir-9-dojo-5dffe.web.app/img/slides/slide-1.jpg">
+    <meta property="og:image" content="https://fir-9-dojo-5dffe.web.app/img/slides/slide-2.jpg">
+    <meta property="og:image" content="https://fir-9-dojo-5dffe.web.app/img/slides/slide-3.jpg">
+    
+    <!-- CSS  -->
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/nav.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- PWA Settings  -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- IOS support -->
+    <link rel="apple-touch-icon" href="/img//icons/icon-96x96.png">
+    <meta name="apple-movile-web-app-status-bar" content="#FCB43A">
+    <meta name="theme-color" content="#FFE1C4">
+    
+    <!-- Firebase services  -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    
+</head>
+<body>
+
+<!-- top nav -->
+<div class="top-nav" onclick="controllTopNav(event)">
+  <a href="/">Creative Care</a>
+  <a href="#"><i class="fa fa-fw fa-user"></i> 
+    <span onclick="openLoginForm()" class="login" style="display: none;">Login</span>
+    <span onclick="openUserProfile()" class="profile" style="display: none;">Profile</span>
+  </a>
+  <a href="./contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div>
+
+<!-- sub top nav  -->
+<div class="sub-top-nav" id="subnav">
+  <a href="./routine.html">Routine</a>
+  <a href="./admission.html">Admission</a>
+  <a href="./contact.html">Contact</a>
+  <a href="./tutor.html">Home Tutor</a>
+</div>
+    <!-- main content will go here -->
+  <main>
+    <h1>Class Routine for <span style="color: var(--primary);">HSC-24</span></h1>
+    <p>শনি, সোম, বুধ <b>&rArr; <span style="color: var(--secondary);">হিসাববিজ্ঞান</span></b></p>
+    <table>
+      <tr>
+        <th>Batch</th>
+        <th>Starts</th>
+        <th>Ends</th>
+      </tr>
+      <tr>
+        <td>A (available)</td>
+        <td>9:00am</td>
+        <td>10:00am</td>
+      </tr>
+      <tr>
+        <td>B (available)</td>
+        <td>6:00pm</td>
+        <td>7:00pm</td>
+      </tr>
+      <tr>
+        <td>C (full)</td>
+        <td>7:00pm</td>
+        <td>8:00pm</td>
+      </tr>
+    </table>
+    <br>
+    <p>রবি, মঙ্গল, বৃহস্পতি<b>&rArr; <span style="color: var(--secondary);">ICT + English</span></b></p>
+    <table>
+      <tr>
+        <th>Batch</th>
+        <th>Starts</th>
+        <th>Ends</th>
+      </tr>
+      <tr>
+        <td>A (available)</td>
+        <td>9:00am</td>
+        <td>11:00am</td>
+      </tr>
+      <tr>
+        <td>B (full)</td>
+        <td>5:00pm</td>
+        <td>7:00pm</td>
+      </tr>
+      <tr>
+        <td>C (full)</td>
+        <td>7:00pm</td>
+        <td>9:00pm</td>
+      </tr>
+    </table>
+    <h1>Class Routine for <span style="color: var(--primary);">HSC-25</span></h1>
+    <p>শনি, সোম, বুধ <b>&rArr; <span style="color: var(--secondary);">ICT + English</span></b></p>
+    <table>
+      <tr>
+        <th>Batch</th>
+        <th>Starts</th>
+        <th>Ends</th>
+      </tr>
+      <tr>
+        <td>A (available)</td>
+        <td>1:00pm</td>
+        <td>3:00pm</td>
+      </tr>
+      <tr>
+        <td>B (available)</td>
+        <td>3:00pm</td>
+        <td>4:30pm</td>
+      </tr>
+      <tr>
+        <td>C (full)</td>
+        <td>4:30pm</td>
+        <td>6:00pm</td>
+      </tr>
+    </table>
+    <br>
+    <p>রবি, মঙ্গল, বৃহস্পতি<b>&rArr; <span style="color: var(--secondary);">Accounting + Finance</span></b></p>
+    <table>
+      <tr>
+        <th>Batch</th>
+        <th>Starts</th>
+        <th>Ends</th>
+      </tr>
+      <tr>
+        <td>A (available)</td>
+        <td>1:00pm</td>
+        <td>2:00pm</td>
+      </tr>
+      <tr>
+        <td>B (available)</td>
+        <td>3:00pm</td>
+        <td>4:00pm</td>
+      </tr>
+      <tr>
+        <td>C (full)</td>
+        <td>4:00pm</td>
+        <td>5:00pm</td>
+      </tr>
+    </table>
+  </main>
+
+<!-- Sign up form  -->
+<div class="form-popup" id="singupForm">
+  <form id="createUser" class="form-container">
+    <h1>Sign Up</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Sign Up</button>
+    <button type="button" class="btn cancel" onclick="closeSignupForm()">Close</button>
+    <p>Already registered? 
+      <span onclick="openLoginForm()" style="text-decoration: underline; color: var(--secondary);">Login here</span>
+    </p>
+  </form>
+</div>
+
+<!-- Login form  -->
+  <div class="form-popup" id="loginForm">
+    <form id="loginUser" class="form-container">
+      <h1>Login</h1>
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+      <p>Not registered? 
+        <span onclick="openSignupForm()" style="text-decoration: underline; color: var(--secondary);">Sign Up here</span>
+      </p>
+    </form>
+  </div>
+<!-- User Profile  -->
+<div class="form-popup" id="userProfile">
+  <form id="logOutUser" class="form-container">
+    <h1>User Profile</h1>
+
+    <button type="submit" class="btn">Log Out</button>
+    <button type="button" class="btn cancel" onclick="closeUserProfile()">Close</button>
+  </form>
+</div>
+  
+
+    <script src="/js/app.js"></script>
+    <script type="module" src="./js/auth.js"></script>
+    <script defer src="/js/nav.js"></script>
+    <script>
+
+    </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* Table  */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.banner{
+  padding-top: 15px;
+  background-color: #f1f1f1;
+  position: relative;
+}
+.banner-text{
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  font-size: 16px;
+  margin: 5px 0;
+  padding: 0 5px;
+}
+.banner-text-divider{
+  border-right: 2px solid #fcb43a;
+  margin-left: -30px;
+}
+.banner-text-left{
+  padding: 5px;
+  padding-left: 20px;
+}
+.banner-text-right{
+  text-align: left;
+}
+.banner-action{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}

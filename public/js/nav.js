@@ -1,3 +1,11 @@
+// left drawer section 
+
+var toggleDrawer = () => {
+  var drawer = document.querySelector('.drawer-content');
+  drawer.classList.toggle('drawer-open')
+}
+
+
 // Top nav 
 const controllTopNav = (e) => {
   sessionStorage.setItem('topNavItem', e.target.text)
